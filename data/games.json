@@ -1,0 +1,18 @@
+[
+    {
+      "id": "game-1",
+      "title": "Первая игра",
+      "description": "Описание первой игры",
+      "technologies": ["Unity", "C#", "WebGL"],
+      "screenshots": ["/images/game-1-1.jpg", "/images/game-1-2.jpg"],
+      "webglUrl": "/games/game-1/index.html"
+    },
+    {
+      "id": "game-2",
+      "title": "Вторая игра",
+      "description": "Описание второй игры",
+      "technologies": ["Godot", "GDScript"],
+      "screenshots": ["/images/game-2-1.jpg", "/images/game-2-2.jpg"],
+      "webglUrl": "/games/game-2/index.html"
+    }
+  ]
