@@ -1,18 +1,13 @@
 [
     {
-      "id": "game-1",
-      "title": "Первая игра",
+      "id": "pack-bringer",
+      "title": "Pack Bringer",
       "description": "Описание первой игры",
       "technologies": ["Unity", "C#", "WebGL"],
       "screenshots": ["/images/game-1-1.jpg", "/images/game-1-2.jpg"],
-      "webglUrl": "/games/game-1/index.html"
-    },
-    {
-      "id": "game-2",
-      "title": "Вторая игра",
-      "description": "Описание второй игры",
-      "technologies": ["Godot", "GDScript"],
-      "screenshots": ["/images/game-2-1.jpg", "/images/game-2-2.jpg"],
-      "webglUrl": "/games/game-2/index.html"
+      "loaderUrl": "a10a5d6582cf2aeef88f91fbf786d429.loader.js",
+      "dataUrl": "db73845a23912faf2b21db7f43dd79c6.data",
+      "frameworkUrl": "9492d6fe5562eba03267f3a42ea77954.framework.js",
+      "codeUrl": "8c642be6a557ee92c346c10d77054ae8.wasm"
     }
   ]
