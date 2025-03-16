@@ -1,0 +1,14 @@
+[
+    {
+        "id": "#about",
+        "title": "About"
+    },
+    {
+        "id": "#games",
+        "title": "Games"
+    },
+    {
+        "id": "#contacts",
+        "title": "Contacts"
+    }
+]
