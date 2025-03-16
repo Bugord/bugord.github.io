@@ -25,7 +25,10 @@
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "@/components/*": ["./app/сomponents/*"],
+      "@/interfaces/*": ["./app/interfaces/*"],
+      "@/data/*": ["./public/data/*"],
     }
   },
   "include": [
@@ -34,7 +37,7 @@
     ".next/types/**/*.ts",
     "next-env.d.ts",
     "build/types/**/*.ts"
-  ],
+, "app/utils/motion.js"  ],
   "exclude": [
     "node_modules"
   ]
