@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import games from '@/data/Games.json'
+import Image from 'next/image'
 
 const Games = () => {
   return (
@@ -11,7 +12,7 @@ const Games = () => {
           <Link key={game.id} href={`/game/${game.id}`} className="block">
             <div className="border rounded-lg p-4 hover:shadow-lg transition">
               <h2 className="text-xl font-semibold">{game.title}</h2>
-              <img src={game.screenshots[0]} alt={game.title} className="w-full h-40 object-cover mt-2 rounded" />
+                <img src={`/data/games/${game.id}/cover.png`} alt={game.id}/>
             </div>
           </Link>
         ))}

@@ -1,4 +1,4 @@
-import GamePlayer from '@/app/сomponents/GamePlayer';
+import UnityGamePlayer from '@/app/сomponents/UnityGamePlayer';
 import games from '@/data/Games.json'
 import { Game } from "@/interfaces/game";
 
@@ -18,10 +18,8 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
     return <p>Игра не найдена</p>;
   }
 
-
-
   return (
-    <div className="p-4">
+    <div className="p-4 max-w-7xl mx-auto">
       <h1 className="text-2xl font-bold">{game.title}</h1>
       <p className="mt-2">{game.description}</p>
 
@@ -31,7 +29,8 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
           <li key={tech}>{tech}</li>
         ))}
       </ul>
-        <GamePlayer game={game}/>
+      {/* <Test></Test> */}
+        <UnityGamePlayer game={game}/>
     </div>
   );
 }
