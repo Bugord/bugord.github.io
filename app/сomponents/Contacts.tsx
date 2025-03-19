@@ -1,9 +1,13 @@
 import React from 'react'
+import Section from '@/components/Section'
 
 const Contacts = () => {
   return (
-    <div id="contacts" className='bg-emerald-700 h-svh pt-12'>Contacts</div>
+    <div className='bg-emerald-700 h-svh pt-12'>Contacts</div>
   )
 }
 
-export default Contacts
+
+const ContactsSection = () => Section(<Contacts/>, 'contacts', 'CONTACTS')
+
+export default ContactsSection 

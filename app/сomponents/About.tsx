@@ -1,9 +1,14 @@
 import React from 'react'
+import Section from './Section'
 
 const About = () => {
   return (
-    <div id="about" className='bg-green-700 h-svh pt-12'>About</div>
+    <div className='bg-green-700 h-dvh pt-12'>
+      About
+    </div>
   )
 }
 
-export default About
+const AboutSection = () => Section(<About/>, 'about', 'About')
+
+export default AboutSection 

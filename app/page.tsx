@@ -1,12 +1,14 @@
-import Games from "@/app/сomponents/Games";
-import Header from "@/app/сomponents/Header";
-import About from "./сomponents/About";
-import Contacts from "./сomponents/Contacts";
+import Games from '@/components/Games';
+import Header from '@/components/Header';
+import Contacts from '@/components/Contacts';
+import About from '@/components/About';
+import Head from '@/components/Head';
 
 export default async function Home() {
   return (
     <>
       <Header />
+      <Head/>
       <About />
       <Games />
       <Contacts />

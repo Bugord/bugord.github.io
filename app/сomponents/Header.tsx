@@ -28,7 +28,7 @@ function scrollToTop(){
 
 const Header = () => {
     return (
-        <nav className='sm:px-16 px-6 w-full flex items-center justify-between py-3 fixed top-0 bg-blue-950'>
+        <nav className='sm:px-16 px-6 w-full flex items-center justify-between py-3 fixed top-0 bg-blue-950 z-10'>
             <div onClick={scrollToTop}>Home</div>
             <ul className='flex flex-row gap-6'>
                 {headerLinks.map((link) => (

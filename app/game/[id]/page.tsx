@@ -18,6 +18,8 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
     return <p>Игра не найдена</p>;
   }
 
+  const images = game.screenshots.map((screenshot) => ({ original: screenshot }));
+
   return (
     <div className="p-4 max-w-7xl mx-auto">
       <h1 className="text-2xl font-bold">{game.title}</h1>
@@ -29,8 +31,14 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
           <li key={tech}>{tech}</li>
         ))}
       </ul>
-      {/* <Test></Test> */}
-        <UnityGamePlayer game={game}/>
+        <div className='max-w-5xl'>
+          <UnityGamePlayer game={game} />
+        </div>
+        <div>
+          {images.map((image) => (
+            <img key={image.original} src={image.original} className="mt-4" />
+          ))}
+        </div>
     </div>
   );
 }
